@@ -1,6 +1,5 @@
-// Servidor do Patinhas (Aula 12): Express + MySQL + CORS
+// Servidor do Patinhas
 // Rodar: npm run dev (dentro da pasta server)
-// =====================================================================
 
 // Carregar módulos
 const express = require("express");
@@ -9,7 +8,6 @@ const mysql = require("mysql2"); // mesma forma de uso do "mysql" visto em aula
 const cors = require("cors");
 
 // Conexão com a base de dados
-// >>> Troque "user" e "password" pelos dados do SEU MySQL <<<
 const db = mysql.createPool({
   host: "localhost",
   user: "root",
@@ -23,9 +21,9 @@ app.use(cors());
 app.use(express.json());
 
 
-// ---------------------------------------------------------------------
+
 // ANIMAIS
-// ---------------------------------------------------------------------
+
 
 // READ — lista de animais disponíveis (página Adote e Início)
 app.get("/animais", (req, res) => {

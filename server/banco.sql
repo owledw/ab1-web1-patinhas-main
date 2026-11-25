@@ -1,7 +1,5 @@
 -- Banco de dados do Patinhas
--- Rode este arquivo inteiro no MySQL Workbench uma única vez.
--- ATENÇÃO: ele apaga e recria as tabelas, então não rode de novo
--- depois de ter dados reais cadastrados.
+
 
 SET NAMES utf8mb4;
 
@@ -17,7 +15,6 @@ DROP TABLE IF EXISTS contatos;
 DROP TABLE IF EXISTS boletim;
 
 -- Animais disponíveis para adoção
--- (os nomes das colunas são os mesmos campos usados no React)
 CREATE TABLE animais (
   id          INT AUTO_INCREMENT PRIMARY KEY,
   nome        VARCHAR(60)  NOT NULL,

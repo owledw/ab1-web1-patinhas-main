@@ -90,9 +90,6 @@ src/
 - **`server/index.js`**: servidor Express com as rotas (`/animais`, `/solicitacoes`, `/contatos`, `/boletim`).
 - **`server/banco.sql`**: cria o banco `patinhas`, as 4 tabelas e os animais iniciais.
 - **`src/services/api.js`**: requisições do React para o servidor com Axios.
-
-📖 Passo a passo completo em **[PASSO_A_PASSO_BANCO.md](PASSO_A_PASSO_BANCO.md)**.
-
 ---
 
 ## 💻 Como Executar o Projeto
